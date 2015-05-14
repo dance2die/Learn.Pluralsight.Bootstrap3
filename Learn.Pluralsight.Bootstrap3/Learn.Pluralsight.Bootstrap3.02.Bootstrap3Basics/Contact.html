@@ -38,61 +38,79 @@
 			</div>
 
 			<p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
-			<div class="col-md-6">
-				<form class="form-horizontal" id="contactForm">
-					<div class="form-group">
-						<label for="nameInput">Your Name</label>
-						<div class="input-group">
-							<span class="input-group-addon">Hello </span>
-							<input name="nameInput" type="text" class="form-control" placeholder="e.g. Your Name" />
-							<span class="input-group-addon">!</span>
+
+
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#formTab" data-toggle="tab">Contact Form</a></li>
+				<li><a href="#addressTab" data-toggle="tab">Address</a></li>
+			</ul>
+
+
+			<div class="tab-content">
+				<div class="well tab-pane active" id="formTab">
+					<div class="row">
+						<div class="col-md-6">
+							<form class="form-horizontal" id="contactForm">
+								<div class="form-group">
+									<label for="nameInput">Your Name</label>
+									<div class="input-group">
+										<span class="input-group-addon">Hello </span>
+										<input name="nameInput" type="text" class="form-control" placeholder="e.g. Your Name"/>
+										<span class="input-group-addon">!</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="emailInput">Email</label>
+									<div class="input-group">
+										<span class="input-group-addon">@</span>
+										<input type="email" name="emailInput" class="form-control"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Reason</label>
+									<select class="form-control">
+										<option>Adoration</option>
+										<option>Ordering a White Russian</option>
+										<option>Complaint</option>
+										<option>I am lost</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label>Message</label>
+									<textarea cols="40" rows="6" class="form-control" placeholder="e.g. The Message"></textarea>
+								</div>
+
+								<input type="submit" value="Submit" class="btn btn-success"/>
+							</form>
+
+
+							<!--<a href="#sentdialog" class="btn btn-info" data-toggle="modal">
+								Show dialog...
+							</a>-->
+
 						</div>
 					</div>
-					<div class="form-group">
-						<label for="emailInput">Email</label>
-						<div class="input-group">
-							<span class="input-group-addon">@</span>
-							<input type="email" name="emailInput" class="form-control" />
-						</div>
+				</div>
+
+				<div class="well tab-pane" id="addressTab">
+					<h3>Our fake address</h3>
+					<div>
+						<address>
+							Big Lebowski Fan Page<br/>
+							123 Main Street<br/>
+							Rug Ties The Room Together, CA 98765<br/>
+							<abbr title="Phone">P:</abbr>
+							425.555.0100
+						</address>
+						<address>
+							<strong>Support:</strong> <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br/>
+							<strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
+						</address>
 					</div>
-					<div class="form-group">
-						<label>Reason</label>
-						<select class="form-control">
-							<option>Adoration</option>
-							<option>Ordering a White Russian</option>
-							<option>Complaint</option>
-							<option>I am lost</option>
-						</select>
-					</div>
-
-					<div class="form-group">
-						<label>Message</label>
-						<textarea cols="40" rows="6" class="form-control" placeholder="e.g. The Message"></textarea>
-					</div>
-
-					<input type="submit" value="Submit" class="btn btn-success" />
-				</form>
-
-
-				<!--<a href="#sentdialog" class="btn btn-info" data-toggle="modal">
-					Show dialog...
-				</a>-->
-
+				</div>
 			</div>
-			<h3>Our fake address</h3>
-			<div>
-				<address>
-					Big Lebowski Fan Page<br />
-					123 Main Street<br />
-					Rug Ties The Room Together, CA 98765<br />
-					<abbr title="Phone">P:</abbr>
-					425.555.0100
-				</address>
-				<address>
-					<strong>Support:</strong> <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
-					<strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
-				</address>
-			</div>
+
 		</section>
 		<hr />
 		<footer>
