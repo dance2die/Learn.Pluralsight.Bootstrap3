@@ -19,6 +19,14 @@
 		alert("close");
 	});
 
+	$("#contactForm input[type=submit]").tooltip({
+		placement: "left",
+		delay: {
+			show: 500,
+			hide: 0
+		}
+	});
+
 	//var $sentDialog = $("#sentDialog");
 
 	//$("#contactForm").on("submit", function () {
