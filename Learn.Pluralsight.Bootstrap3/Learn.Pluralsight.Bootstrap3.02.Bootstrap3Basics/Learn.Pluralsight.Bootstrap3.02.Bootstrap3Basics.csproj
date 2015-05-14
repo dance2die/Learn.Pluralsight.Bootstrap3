@@ -91,6 +91,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-2.0.3.js" />
     <Content Include="js\jquery-2.0.3.min.js" />
+    <Content Include="js\site.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

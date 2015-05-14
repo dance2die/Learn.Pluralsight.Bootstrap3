@@ -34,16 +34,17 @@
 
 		<section id="body" class="container">
 			<div class="page-header">
-				<h1>Contact Us</h1></div>
+				<h1>Contact Us</h1>
+			</div>
 
 			<p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
 			<div class="col-md-6">
-				<form class="form-horizontal">
+				<form class="form-horizontal" id="contactForm">
 					<div class="form-group">
 						<label for="nameInput">Your Name</label>
 						<div class="input-group">
 							<span class="input-group-addon">Hello </span>
-							<input name="nameInput" type="text" class="form-control" placeholder="e.g. Your Name"/>
+							<input name="nameInput" type="text" class="form-control" placeholder="e.g. Your Name" />
 							<span class="input-group-addon">!</span>
 						</div>
 					</div>
@@ -51,7 +52,7 @@
 						<label for="emailInput">Email</label>
 						<div class="input-group">
 							<span class="input-group-addon">@</span>
-							<input type="email" name="emailInput" class="form-control"/>
+							<input type="email" name="emailInput" class="form-control" />
 						</div>
 					</div>
 					<div class="form-group">
@@ -71,6 +72,12 @@
 
 					<input type="submit" value="Submit" class="btn btn-success" />
 				</form>
+
+
+				<!--<a href="#sentdialog" class="btn btn-info" data-toggle="modal">
+					Show dialog...
+				</a>-->
+
 			</div>
 			<h3>Our fake address</h3>
 			<div>
@@ -82,17 +89,38 @@
 					425.555.0100
 				</address>
 				<address>
-					<strong>Support:</strong>   <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
+					<strong>Support:</strong> <a href="mailto:Support@fakelebowskifansite.com">Support@fakelebowskifansite.com</a><br />
 					<strong>Marketing:</strong> <a href="mailto:Marketing@fakelebowskifansite.com">Marketing@fakelebowskifansite.com</a>
 				</address>
 			</div>
 		</section>
 		<hr />
 		<footer>
-			<p>Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.</p>
+			<p>
+				Text placeholders courtesy of <a href="http://www.lebowskiipsum.com/">Lebowski Ipsum</a>.
+			</p>
 		</footer>
 	</div>
 
+	<div class="modal fade" id="sentDialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a href="#" class="close" data-dismiss="modal">&times;</a>
+					<h4>Thaks for clicking.</h4>
+				</div>
+				<div class="modal-body">
+					<p>This form doesn't really work, Haha!</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/site.js"></script>
 </body>
 </html>
